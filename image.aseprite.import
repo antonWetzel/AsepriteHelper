@@ -1,0 +1,15 @@
+[remap]
+
+importer="antonWetzel.importHelper.aseprite.Texture2D"
+type="Texture2D"
+uid="uid://o6kvkbcrfdak"
+path="res://.godot/imported/image.aseprite-caf2a5f56dfff5b8f735f6bf985d2193.tex"
+
+[deps]
+
+source_file="res://image.aseprite"
+dest_files=["res://.godot/imported/image.aseprite-caf2a5f56dfff5b8f735f6bf985d2193.tex"]
+
+[params]
+
+open_editor=false
