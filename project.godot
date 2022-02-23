@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Asesprite Helper"
+config/name="Aseprite Helper"
 config/icon="res://icon.png"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 
