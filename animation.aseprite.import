@@ -1,14 +1,14 @@
 [remap]
 
-importer="antonWetzel.importHelper.aseprite.PackedScene"
-type="PackedScene"
-uid="uid://b58b7smykv6n7"
-path="res://.godot/imported/animation.aseprite-9446400aefa2c2bd105201c837556d68.tscn"
+importer="antonWetzel.importHelper.aseprite.Texture2D"
+type="Texture2D"
+uid="uid://m3j0uf8cwvn0"
+path="res://.godot/imported/Animation.aseprite-2a0bbaa47692a7ac79084c69f4525394.tex"
 
 [deps]
 
-source_file="res://animation.aseprite"
-dest_files=["res://.godot/imported/animation.aseprite-9446400aefa2c2bd105201c837556d68.tscn"]
+source_file="res://Animation.aseprite"
+dest_files=["res://.godot/imported/Animation.aseprite-2a0bbaa47692a7ac79084c69f4525394.tex"]
 
 [params]
 

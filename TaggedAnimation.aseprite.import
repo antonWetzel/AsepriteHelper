@@ -1,0 +1,15 @@
+[remap]
+
+importer="antonWetzel.importHelper.aseprite.PackedScene"
+type="PackedScene"
+uid="uid://d4jwail505bfo"
+path="res://.godot/imported/TaggedAnimation.aseprite-8cb2621b582d47979f74d38eb33e7dc9.tscn"
+
+[deps]
+
+source_file="res://TaggedAnimation.aseprite"
+dest_files=["res://.godot/imported/TaggedAnimation.aseprite-8cb2621b582d47979f74d38eb33e7dc9.tscn"]
+
+[params]
+
+open_editor=false

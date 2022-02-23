@@ -1,6 +1,8 @@
 @tool
 extends EditorImportPlugin
 
+const paths = preload("./paths.gd")
+
 enum Preset {
 	DEFAULT
 }
@@ -52,10 +54,10 @@ func _get_import_options(path: String, preset_index: int)  -> Array:
 #return {atlas: Texture2D, max_x: int, max_y: int, animations: Array[Animation]}
 #Animation = Dictionary{name: String, direction: String, frames: Array[Frame]}
 #Frame = {time: float, x: int, y: int}
-func convert_file(global_path: String) -> Dictionary:
+func convert_file(ase_path: String, global_path: String) -> Dictionary:
 	var data_path = ProjectSettings.globalize_path("res://temp.json")
 	var sheet_path = ProjectSettings.globalize_path("res://temp.png")
-	OS.execute("aseprite", [
+	OS.execute(ase_path, [
 		"--batch", #perform task in background
 
 		#export meta data as json
@@ -127,3 +129,38 @@ func convert_file(global_path: String) -> Dictionary:
 		"max_y": max_y,
 		"animations": animations,
 	}
+
+func get_aseprite_command() -> String:
+	if not ProjectSettings.has_setting(paths.setting_path):
+		push_error("missing aseprite path setting, please reactivate the plugin")
+		return ""
+	var locations : Array[String] = [ProjectSettings.get(paths.setting_path)]
+	match OS.get_name():
+		"Windows":
+			locations.append("C:/Program Files (x86)/Aseprite/Aseprite.exe")
+			locations.append("C:/Program Files/Aseprite/Aseprite.exe")
+			locations.append("C:/Program Files (x86)/Steam/steamapps/common/Aseprite/Aseprite.exe")
+		"iOS":
+			locations.append("/Applications/Aseprite.app/Contents/MacOS/aseprite")
+			locations.append("~/Library/ApplicationSupport/Steam/steamapps/common/Aseprite/Aseprite.app/Contents/MacOS/aseprite")
+
+	var file = File.new()
+	for location in locations:
+		if file.file_exists(location):
+			return location
+
+	var ending := ""
+	var sep = ":"
+	if OS.get_name() == "Windows":
+		ending = ".exe"
+		sep = ";"
+
+	for location in OS.get_environment("path").split(sep):
+		location = location.trim_suffix("\n")
+		if location.length() == 0:
+			continue
+		location += "/Aseprite" + ending
+		if file.file_exists(location):
+			return location
+	push_error("could not find aseprite in system path or " + JSON.new().stringify(locations))
+	return ""

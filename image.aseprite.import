@@ -2,13 +2,13 @@
 
 importer="antonWetzel.importHelper.aseprite.Texture2D"
 type="Texture2D"
-uid="uid://o6kvkbcrfdak"
-path="res://.godot/imported/image.aseprite-caf2a5f56dfff5b8f735f6bf985d2193.tex"
+uid="uid://biafs4ulrkeic"
+path="res://.godot/imported/Image.aseprite-0a52c6cea06cbf23b56b180e0d7ad1b9.tex"
 
 [deps]
 
-source_file="res://image.aseprite"
-dest_files=["res://.godot/imported/image.aseprite-caf2a5f56dfff5b8f735f6bf985d2193.tex"]
+source_file="res://Image.aseprite"
+dest_files=["res://.godot/imported/Image.aseprite-0a52c6cea06cbf23b56b180e0d7ad1b9.tex"]
 
 [params]
 
