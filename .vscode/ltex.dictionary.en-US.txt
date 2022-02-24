@@ -1,0 +1,4 @@
+Aseprite
+AnimationPlayer
+ProjectSettings
+PackedScene
