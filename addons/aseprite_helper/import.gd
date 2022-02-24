@@ -49,7 +49,14 @@ func _import(source_file: String, save_path: String, options: Dictionary, platfo
 func convert_resource(source_file: String, global_file: String, options: Dictionary) -> Resource: return null
 
 func _get_import_options(path: String, preset_index: int)  -> Array:
-	return [{"name": "open_editor", "default_value": false}]
+	return [
+		{
+			"name": "open_editor",
+			"default_value": 0,
+			"property_hint": PROPERTY_HINT_ENUM,
+			"hint_string": "No,Blocking",
+		}
+	]
 
 #return {atlas: Texture2D, max_x: int, max_y: int, animations: Array[Animation]}
 #Animation = Dictionary{name: String, direction: String, frames: Array[Frame]}

@@ -2,7 +2,7 @@
 
 importer="antonWetzel.importHelper.aseprite.PackedScene"
 type="PackedScene"
-uid="uid://d4jwail505bfo"
+uid="uid://cjdrma8mp6xrb"
 path="res://.godot/imported/TaggedAnimation.aseprite-8cb2621b582d47979f74d38eb33e7dc9.tscn"
 
 [deps]
@@ -12,4 +12,4 @@ dest_files=["res://.godot/imported/TaggedAnimation.aseprite-8cb2621b582d47979f74
 
 [params]
 
-open_editor=false
+open_editor=0

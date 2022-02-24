@@ -16,7 +16,7 @@ Godot 4 Import Plugins for Aseprite
 		- **AnimationPlayer** with a **Track** for every animation
 
 ## Tested
-- Godot 4 Alpha 2 for Windows
+- Godot 4 Alpha 3 for Windows
 - Linux or macOS are not tested
 	- please create an issue if you encounter a problem
 
@@ -27,4 +27,5 @@ Godot 4 Import Plugins for Aseprite
 	- Install in default location
 		- Aseprite default location or Steam (C:)
 	- Change **ProjectSettings/Editor/Import/Aseprite Path** to the location of your **Aseprite Executable**
+		- Activate **Advanced Settings** to see the setting
 	- Add to system path

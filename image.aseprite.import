@@ -2,7 +2,7 @@
 
 importer="antonWetzel.importHelper.aseprite.Texture2D"
 type="Texture2D"
-uid="uid://biafs4ulrkeic"
+uid="uid://djmxt2eno6amp"
 path="res://.godot/imported/Image.aseprite-0a52c6cea06cbf23b56b180e0d7ad1b9.tex"
 
 [deps]
@@ -12,4 +12,4 @@ dest_files=["res://.godot/imported/Image.aseprite-0a52c6cea06cbf23b56b180e0d7ad1
 
 [params]
 
-open_editor=false
+open_editor=0

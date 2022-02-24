@@ -1,13 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsemcq0amy7ej"]
+[gd_scene load_steps=2 format=3 uid="uid://bsemcq0amy7ej"]
 
-[ext_resource type="Texture2D" uid="uid://biafs4ulrkeic" path="res://Image.aseprite" id="1_ycnd0"]
-[ext_resource type="PackedScene" uid="uid://d4jwail505bfo" path="res://TaggedAnimation.aseprite" id="3_4rcrd"]
+[ext_resource type="PackedScene" uid="uid://cjdrma8mp6xrb" path="res://TaggedAnimation.aseprite" id="3_4rcrd"]
 
 [node name="Main" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(42, 0)
-texture = ExtResource( "1_ycnd0" )
 
 [node name="TaggedAnimation" parent="." instance=ExtResource( "3_4rcrd" )]
 

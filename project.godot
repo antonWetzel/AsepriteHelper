@@ -16,7 +16,7 @@ config/features=PackedStringArray("4.0", "Vulkan Clustered")
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/import_helper/animation/plugin.cfg", "res://addons/import_helper/texture/plugin.cfg")
+enabled=PackedStringArray("res://addons/aseprite_helper/animation/plugin.cfg", "res://addons/aseprite_helper/texture/plugin.cfg")
 
 [rendering]
 
